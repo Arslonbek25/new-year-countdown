@@ -1,0 +1,78 @@
+* {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.container {
+    background: url('../img/bg.jpg') no-repeat center / cover;
+    padding-top: 50px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    display: block;
+    font-size: 35px;
+    text-align: center;
+    color: #2D2D2D;
+    font-weight: lighter;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    span {
+        font-size: 50px;
+        font-weight: bold;
+    }
+}
+
+.countdown {
+    font-size: 40px;
+    display: flex;
+
+    div {
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        background: #e74c3c;
+        color: #ecf0f1;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.03);
+        }
+    }
+
+    div:not(:last-child) {
+        margin-right: 20px;
+    }
+}
+
+#new-year {
+    position: relative;
+}
+
+#new-year::before {
+    content: '';
+    background: url('../img/hat.png') no-repeat center center / cover;
+    position: absolute;
+    left: -9px;
+    top: 0;
+    width: 40px;
+    height: 40px;
+}
+
+@media (max-width: 425px) {
+    h1 {
+        font-size: 25px;
+    }
+}
