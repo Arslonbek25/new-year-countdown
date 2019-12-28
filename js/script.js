@@ -32,3 +32,4 @@ function CountDown() {
 }
 
 let timer = setInterval(CountDown, 1000);
+console.log('By Arslonbek Madyarov');
